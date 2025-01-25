@@ -1,8 +1,7 @@
-@@ -1,2 +1,46 @@
-# privasea-privanetix-node
-Easy and detailed guide on how to run Privasea Privanetix Node
 <h2 align=center>Privasea Privanetix Node</h2>
+
 ## Minimum System Requirements
+
 | **Component**             | **Requirement**                     |
 |---------------------------|-------------------------------------|
 | **Operating System (OS)** | Ubuntu (Recommended)                |
@@ -10,6 +9,7 @@ Easy and detailed guide on how to run Privasea Privanetix Node
 | **Storage**               | 100GB available storage             |
 | **Memory (RAM)**          | 4GB RAM                             |
 | **Processor**             | 6 cores                             |
+
 - You can buy VPS from [PQ Hosting](https://pq.hosting/?from=622403&lang=en) using cryptocurrency
 ## Installation
 - First install `Docker` in your system if it is not already there by using below command
@@ -42,4 +42,5 @@ mv $HOME/privasea/config/UTC--* $HOME/privasea/config/wallet_keystore
 ```
 KEYSTORE_PASSWORD=ENTER_YOUR_KEYSTORE_PASSWORD && docker run -d --name privanetix-node -v "$HOME/privasea/config:/app/config" -e KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD privasea/acceleration-node-beta:latest
 ```
+
 - Now follow the guide from **Step 3 (Manage my Privanetix node)** from [this docs](https://www.privasea.ai/privanetix-node)
